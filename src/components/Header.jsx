@@ -8,11 +8,10 @@ export default function Header(props) {
         <img src={logo} alt="logo" height={100} />
       </Link>
       <div>
-        <Link to="/" style={{ marginRight: 10 }}>
+        <Link to="/about" style={{ marginRight: 10 }}>
           About
         </Link>
-
-        <Link to="/" style={{ marginRight: 10 }}>
+        <Link to="/contacts" style={{ marginRight: 10 }}>
           Contacts
         </Link>
       </div>

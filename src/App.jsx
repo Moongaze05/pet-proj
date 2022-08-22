@@ -1,8 +1,9 @@
-import './assets/styles/App.scss';
+import { Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
-import { Route, Routes } from 'react-router-dom';
+import About from './pages/About';
+import Contacts from './pages/Contacts';
 
 function App() {
   return (
@@ -10,8 +11,9 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Main />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contacts" element={<Contacts />} />
       </Routes>
-      {/* <Main /> */}
       <Footer />
     </div>
   );
