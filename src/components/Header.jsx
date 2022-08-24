@@ -2,19 +2,24 @@ import { Route, Routes, NavLink, Link } from "react-router-dom"
 import logo from "../assets/images/logo-bitches.jpg"
 
 export default function Header(props) {
+  const activeStyle = {
+    textDecoration: "underline"
+  }
   return (
-    <header className="header">
-      <Link to="/">
-        <img src={logo} alt="logo" height={100} />
-      </Link>
-      <div>
-        <Link to="/about" style={{ marginRight: 10 }}>
-          About
+    <header>
+      <nav className="header">
+        <Link to="/" className="header-navigation header-navigation__logo">
+          <img src={logo} alt="logo" height={55} />
         </Link>
-        <Link to="/contacts" style={{ marginRight: 10 }}>
-          Contacts
-        </Link>
-      </div>
-    </header>
+        <div>
+          <NavLink to="/about" className="header-navigation" style={({ isActive }) => isActive ? activeStyle : undefined}>
+            About
+          </NavLink>
+          <NavLink to="/contacts" className="header-navigation" style={({ isActive }) => isActive ? activeStyle : undefined}>
+            Contacts
+          </NavLink>
+        </div>
+      </nav>
+    </header >
   )
 }

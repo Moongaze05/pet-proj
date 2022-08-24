@@ -6,6 +6,7 @@
 html,
 body {
   height: 100%;
+  background-color: rgb(0, 0, 1);
 }
 
 #root {
@@ -13,7 +14,8 @@ body {
 }
 
 a {
-  color: white;
+  text-decoration: none;
 }
 
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
 @import './App.scss';
