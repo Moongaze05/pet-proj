@@ -9,6 +9,14 @@
   margin: 0 auto;
 }
 
+.link-hover {
+  transition: 0.15s text-shadow ease;
+
+  &:hover {
+    text-shadow: 0px 3px 8px #fefefe;
+  }
+}
+
 .header {
   margin-bottom: 10px;
   box-shadow: 0 10px 20px -15px #fefefe;
@@ -23,13 +31,7 @@
 }
 
 .header-navigation {
-  color: rgb(254, 254, 254);
   margin-right: 10px;
-  transition: 0.15s text-shadow ease;
-
-  &:hover {
-    text-shadow: 0px 3px 8px #fefefe;
-  }
 }
 
 .header-navigation__logo {
@@ -77,12 +79,4 @@
 .footer-contacts {
   display: flex;
   flex-direction: column;
-}
-
-.footer-contacts__links {
-  transition: 0.15s text-shadow ease;
-
-  &:hover {
-    text-shadow: 0px 3px 8px #fefefe;
-  }
 }
