@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Oxygen;
+  src: local(Oxygen), url("../fonts/Oxygen-Regular.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +12,9 @@ html,
 body {
   height: 100%;
   background-color: rgb(0, 0, 1);
+  font-size: 26px;
+  font-family: Oxygen, sans-serif;
+  color: #fefefe;
 }
 
 #root {
@@ -15,6 +23,7 @@ body {
 
 a {
   text-decoration: none;
+  color: #fefefe
 }
 
 @import "~react-image-gallery/styles/scss/image-gallery.scss";
