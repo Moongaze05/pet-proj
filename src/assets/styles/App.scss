@@ -13,7 +13,7 @@
   transition: 0.15s text-shadow ease;
 
   &:hover {
-    text-shadow: 0px 3px 8px #fefefe;
+    text-shadow: 0 3px 8px #fefefe;
   }
 }
 
@@ -53,7 +53,6 @@
 }
 
 .main-intro-heading {
-  color: #fefefe;
   margin: 0 0 10px 10px;
   max-width: 450px;
 
