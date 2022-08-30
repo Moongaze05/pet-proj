@@ -8,12 +8,14 @@ import Contacts from './pages/Contacts';
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <Routes>
-        <Route path="/" element={<Main/>}/>
-        <Route path="/about" element={<About/>}/>
-        <Route path="/contacts" element={<Contacts/>}/>
-      </Routes>
+      <div>
+        <Header/>
+        <Routes>
+          <Route path="/" element={<Main/>}/>
+          <Route path="/about" element={<About/>}/>
+          <Route path="/contacts" element={<Contacts/>}/>
+        </Routes>
+      </div>
       <Footer/>
     </div>
   );

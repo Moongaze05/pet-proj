@@ -8,14 +8,33 @@ import {useState} from "react"
 export default function Main(props) {
   const [arrows, setArrows] = useState(false)
   const items = [{
-    original: mainDog_1
+    original: mainDog_1,
+    loading: 'lazy',
+    originalHeight: '530',
   },
-    {original: mainDog_2},
-    {original: mainDog_3},
-    {original: mainDog_4},
+    {
+      original: "https://avatars.mds.yandex.net/i?id=b660191313374dda471f979cccb58264-5008775-images-thumbs&n=13",
+      loading: 'lazy',
+      originalHeight: '530',
+    },
+    {
+      original: mainDog_2,
+      loading: 'lazy',
+      originalHeight: '530',
+    },
+    {
+      original: mainDog_3,
+      loading: 'lazy',
+      originalHeight: '530',
+    },
+    {
+      original: mainDog_4,
+      loading: 'lazy',
+      originalHeight: '530',
+    },
   ]
   return (
-    <div className="main container">
+    <main className="main container">
       <div className="main-intro">
         <div className="main-intro-heading">
           <h2 style={{marginBottom: 10}}>Hey there, mthfckrs</h2>
@@ -25,9 +44,9 @@ export default function Main(props) {
         </div>
         <div className="main-intro-image" onMouseEnter={() => setArrows(true)}
              onMouseLeave={() => setArrows(false)}>
-          <ImageGallery items={items} showNav={arrows} showBullets={true} autoPlay={true}/>
+          <ImageGallery key={1} items={items} showNav={arrows} showBullets={true} autoPlay={true} lazyLoad={true}/>
         </div>
       </div>
-    </div>
+    </main>
   )
 }
