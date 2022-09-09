@@ -1,10 +1,12 @@
 import {Route, Routes, NavLink, Link} from "react-router-dom"
 import logo from "../assets/images/logo-bitches.jpg"
 
+export const activeStyle = {
+  textDecoration: "underline"
+}
+
 export default function Header(props) {
-  const activeStyle = {
-    textDecoration: "underline"
-  }
+
   return (
     <header className="header">
       <nav className="header-nav container">
