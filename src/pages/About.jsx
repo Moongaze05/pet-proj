@@ -3,6 +3,7 @@ import {NavLink, Route, Routes} from "react-router-dom";
 import WhatAbout from "../components/WhatAbout";
 import WhyAbout from "../components/WhyAbout";
 import {activeStyle} from "../components/Header";
+import Page404 from "./Page404";
 
 export default function About() {
   return (
@@ -27,8 +28,10 @@ export default function About() {
           </NavLink>
         </div>
         <Routes>
+          <Route path="/" element={<div></div>}/>
           <Route path="/whatabout" element={<WhatAbout/>}/>
           <Route path="/whyabout" element={<WhyAbout/>}/>
+          <Route path="*" element={<Page404/>}/>
         </Routes>
       </div>
     </main>
